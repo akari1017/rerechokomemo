@@ -1,5 +1,4 @@
 class TweetsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :edit,:destroy]
   before_action :set_tweet, only: [:edit, :show, :destroy, :update]
   before_action :move_to_item, only: [:edit, :destroy]
 
@@ -22,6 +21,7 @@ class TweetsController < ApplicationController
   end
 
   def show
+    @tweet = Tweet.find(params[:id])
   end
 
   def edit
