@@ -9,4 +9,12 @@
     <div class='dou'>
       <%= @tweet.diary %>
     </div>
-</div>
+<div class="boxContainer">
+ <% if current_user.id == @tweet.user_id %>
+      <%= link_to "ツイートを編集する", edit_tweet_path(@tweet.id), method: :get, class: "cou" %>
+      <%= link_to "ツイートを削除する", tweet_path(@tweet.id), method: :delete, class:"aou" %>
+      <%end%>
+      </div>
+      </div>
+
+      
