@@ -1,0 +1,12 @@
+<div class="contents row">
+   <div class="tweet-nickname">
+  <%= @tweet.user.nickname %><span>の投稿</span>
+  </div>
+    <div class="vou" >
+     <%= @tweet.created_at.strftime('%Y/%m/%d') %>
+     </div>
+      <%= image_tag @tweet.image ,class:"item-box-img" %>
+    <div class='dou'>
+      <%= @tweet.diary %>
+    </div>
+</div>
