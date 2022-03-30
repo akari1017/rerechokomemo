@@ -1,66 +1,28 @@
-# README
+# アプリケーション名
+rechokomemo
 
-## users テーブル
+# アプリケーション概要
+日記を共有することでユーザー同士でコミュニケーションができ、目標に向けて励まし合うことができる。
 
-| Column             | Type   | Options                   |
-| ------------------ | ------ | ------------------------- |
-| nickname           | string | null: false               |
-| email              | string | null: false, unique: true |
-| encrypted_password | string | null: false               |
-| birth_date         | date   | null: false               |
-
-### Association
-
-- has_many :tweets
-- has_one  :goal
+# URL
 
 
-
-## tweets テーブル
-
-| Column       | Type       | Options                        |
-| ------------ | ---------- | ------------------------------ |
-| diary        | text       | null: false                    |
-| weight       | integer    | null: false                    |
-| user         | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
+# テスト用アカウント
+・Basic認証パスワード:test
+・Basic認証ID:3333
+・テスト用アカウント:aaa@gmail.com
+・パスワード:aaaaa1017
 
 
+# 利用方法
+1.トップページのヘッダーからユーザー新規登録を行う
+2.投稿するというボタンから、今日の日記を更新する
+3.みんなの投稿にいいねをつけることができる（非同期）
+4.マイページでこれまでの投稿を見ることができる
 
-## goals テーブル
+# アプリケーションを作成した背景
+自身も含め目標に向けて物事を継続するときにモチベーションが続かないことがあるので、日記を共有することで目標に向けて励まし合うことができるアプリケーションを開発することにした。
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |
-
-
-### Association
-
-- belong_to :user
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 実装予定の機能
+本番環境へのデプロイ
+投稿の詳細ページと投稿したユーザのページを見ることができる機能を実装中。

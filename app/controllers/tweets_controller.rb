@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Tweet.all.order('created_at DESC')
-    @tweet = Tweet.where(user_id: current_user.id).last.weight
+    @tweet = Tweet.last.weight
   end
 
   def new
