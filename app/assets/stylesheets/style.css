@@ -1049,3 +1049,11 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
+.container {
+  background-color: #f3f3f3;
+  width: 70%;
+  text-align: center;
+  position:absolute;
+  left: 30vh;
+}

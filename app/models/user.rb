@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :tweets
   has_many :likes
+  has_many :comments
 
   def liked_by?(tweet_id)
     likes.where(tweet_id: tweet_id).exists?
