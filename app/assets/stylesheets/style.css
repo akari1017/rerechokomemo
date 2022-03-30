@@ -1057,3 +1057,8 @@ footer p {
   position:absolute;
   left: 30vh;
 }
+
+.item-abc {
+  background-color: #9bdbf2;
+  padding-left: 140px;
+}

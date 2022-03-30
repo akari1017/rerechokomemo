@@ -202,9 +202,6 @@
   border: 10px solid #5321003f;
 }
 
-.vou {
-  float: right;
-}
 
 .dou {
   margin: 10px;
@@ -241,4 +238,8 @@
   padding: 30px;
   display: flex;
   justify-content: space-around;
+}
+
+.contents row {
+  text-align: center;
 }
