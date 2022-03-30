@@ -150,13 +150,13 @@
 .like-btn {
   font-size: 17px;
   color: #808080;
-  margin: 0 0 0 92vh;
+  margin: 0 0 0 140vh;
  }
  
  .unlike-btn {
   font-size: 17px;
   color: #e54747;
-  margin: 0 0 0 92vh;
+  margin: 0 0 0 140vh;
  }
 
 .goal-text {
@@ -202,9 +202,6 @@
   border: 10px solid #5321003f;
 }
 
-.vou {
-  float: right;
-}
 
 .dou {
   margin: 10px;
@@ -241,4 +238,8 @@
   padding: 30px;
   display: flex;
   justify-content: space-around;
+}
+
+.contents row {
+  text-align: center;
 }

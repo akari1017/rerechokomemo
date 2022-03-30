@@ -5,7 +5,9 @@
     <div class="vou" >
      <%= @tweet.created_at.strftime('%Y/%m/%d') %>
      </div>
+     <div class="eou">
       <%= image_tag @tweet.image ,class:"item-box-img" %>
+      </div>
     <div class='dou'>
       <%= @tweet.diary %>
     </div>
